@@ -21,6 +21,6 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void JoyMoved(Vector2 pos){
-		body.velocity = new Vector3(pos.x, 0, pos.y) * speed;
+		body.velocity = new Vector3(pos.x, 0, -pos.y) * speed;
 	}
 }
